@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="addedit"
+            type="com.kurio.mvvmtesting.model.Note" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.kurio.mvvmtesting.ui.activity.AddEditNoteActivity">
+
+        <EditText
+            android:id="@+id/etTitle"
+            style="@style/defaultText"
+            android:hint="@string/title"
+            android:text="@{addedit.title}" />
+
+        <EditText
+            android:id="@+id/etDescription"
+            style="@style/defaultText"
+            android:hint="@string/Description"
+            android:text="@{addedit.description}" />
+
+        <NumberPicker
+            android:id="@+id/numberPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:value="@{addedit.priority}" />
+    </LinearLayout>
+
+</layout>

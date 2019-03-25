@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MVVMTesting</string>
+    <string name="action_settings">Settings</string>
+    <string name="title">Title</string>
+    <string name="Description">Description</string>
+    <string name="Priority">Priority</string>
+    <string name="Save">Save</string>
+</resources>
