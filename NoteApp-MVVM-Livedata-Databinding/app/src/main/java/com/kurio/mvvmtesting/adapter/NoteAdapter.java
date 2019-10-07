@@ -57,11 +57,6 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.MyHolder> {
             noteRowBinding.setVariable(BR.notemodel, obj);
             noteRowBinding.executePendingBindings();
         }
-//
-//        @Override
-//        public void onClick(View v) {
-//
-//        }
 
         @Override
         public void cardClicked(Note note) {
